@@ -1,0 +1,3 @@
+[submodule "bates-railscasts"]
+	path = bates-railscasts
+	url = git://github.com/ryanb/railscasts-episodes.git
