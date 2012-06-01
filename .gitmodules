@@ -1,3 +1,6 @@
 [submodule "amundsen-building-hypermedia-apis"]
 	path = amundsen-building-hypermedia-apis
 	url = git://github.com/mamund/Building-Hypermedia-APIs.git
+[submodule "wake-rutherford-refactoring-in-ruby"]
+	path = wake-rutherford-refactoring-in-ruby
+	url = git://github.com/kevinrutherford/rrwb-code.git
