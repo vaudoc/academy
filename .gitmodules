@@ -4,3 +4,6 @@
 [submodule "wake-rutherford-refactoring-in-ruby"]
 	path = wake-rutherford-refactoring-in-ruby
 	url = git://github.com/kevinrutherford/rrwb-code.git
+[submodule "katz-rails3-in-action"]
+	path = katz-rails3-in-action
+	url = https://github.com/rails3book/ticketee.git
