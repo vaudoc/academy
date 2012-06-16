@@ -1,3 +1,6 @@
-[submodule "bates-railscasts"]
-	path = bates-railscasts
+[submodule "podcasts/bates-railscasts"]
+	path = podcasts/bates-railscasts
 	url = git://github.com/ryanb/railscasts-episodes.git
+[submodule "podcasts/bernhardt-destroy-all-software"]
+	path = podcasts/bernhardt-destroy-all-software
+	url = git://github.com/garybernhardt/destroy-all-software-extras.git
