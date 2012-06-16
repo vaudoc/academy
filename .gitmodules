@@ -1,9 +1,9 @@
-[submodule "amundsen-building-hypermedia-apis"]
-	path = amundsen-building-hypermedia-apis
+[submodule "books/amundsen-building-hypermedia-apis"]
+	path = books/amundsen-building-hypermedia-apis
 	url = git://github.com/mamund/Building-Hypermedia-APIs.git
-[submodule "wake-rutherford-refactoring-in-ruby"]
-	path = wake-rutherford-refactoring-in-ruby
+[submodule "books/wake-rutherford-refactoring-in-ruby"]
+	path = books/wake-rutherford-refactoring-in-ruby
 	url = git://github.com/kevinrutherford/rrwb-code.git
-[submodule "katz-rails3-in-action"]
-	path = katz-rails3-in-action
+[submodule "books/katz-rails3-in-action"]
+	path = books/katz-rails3-in-action
 	url = https://github.com/rails3book/ticketee.git
