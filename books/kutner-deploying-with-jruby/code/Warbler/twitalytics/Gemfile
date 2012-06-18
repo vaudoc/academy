@@ -1,0 +1,53 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.2.3'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+gem 'json'
+gem 'twitter', '2.0.2'
+
+# START:therubyrhino  
+platform :jruby do
+  gem 'therubyrhino'
+  # END:therubyrhino
+  # START:get_back
+  gem 'get_back'
+  # END:get_back
+  # START:jruby_openssl
+  gem 'jruby-openssl'
+  # END:jruby_openssl
+  # START:therubyrhino  
+end
+# END:therubyrhino
+
+group :test do
+  gem 'rspec-rails'
+end
+
+# START:db_driver
+gem 'activerecord-jdbc-adapter', :require => false
+
+group :production do
+  gem 'jdbc-postgres'
+end
+
+group :development, :test do
+  gem 'jdbc-sqlite3'
+end
+# END:db_driver
+
+# START:deploy
+group :deploy do
+  gem "net-ssh", :require => "net/ssh"
+  gem "net-scp", :require => "net/scp"
+  gem "warbler", "1.3.4"
+end
+# END:deploy
