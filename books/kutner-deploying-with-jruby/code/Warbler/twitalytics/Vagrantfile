@@ -4,6 +4,7 @@ Vagrant::Config.run do |config|
   config.vm.box = "warbler"
   # END:box
 
+  # START:forward_8000
   config.vm.forward_port 80, 8000
   # END:base
   # START:forward_8080

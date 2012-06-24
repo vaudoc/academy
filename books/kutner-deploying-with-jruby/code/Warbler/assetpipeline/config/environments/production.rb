@@ -1,9 +1,9 @@
 #---
 # Excerpted from "Deploying with JRuby",
 # published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material, 
+# Copyrights apply to this code. It may not be used to create training material,
 # courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose. 
+# We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/jkdepj for more book information.
 #---
 Twitalytics::Application.configure do
@@ -28,6 +28,11 @@ Twitalytics::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # This is necessary because we are deploying our application under the
+  # /twitalytics context (that’s why we accessed the application at
+  # http://localhost:8888/twitalytics). But Rails looks for our assets
+  # under the /assets path by default. Setting the asset host will force
+  # it to look for them under the /twitalytics/assets path.
   config.action_controller.asset_host = "/twitalytics"
 
   # Defaults to Rails.root.join("public/assets")

@@ -1,5 +1,5 @@
 # START:jruby_max_runtimes
-jruby_max_runtimes: 1   
+jruby_max_runtimes: 1
 # END:jruby_max_runtimes
 # START:diagnostics
 # START:scheduler

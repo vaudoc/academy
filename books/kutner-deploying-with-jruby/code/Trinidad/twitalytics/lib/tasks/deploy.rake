@@ -1,36 +1,38 @@
-# START:require
-require 'bundler'
-Bundler.require(:deploy)
-# END:require
+if defined?(Warbler)
 
-# START:with_ssh
-SSH_KEY = "#{ENV["GEM_HOME"]}/gems/vagrant-0.8.10/keys/vagrant"
+  # START:require
+  require 'bundler'
+  Bundler.require(:deploy)
+  # END:require
 
-def with_ssh
+  # START:with_ssh
+  SSH_KEY = "#{ENV["GEM_HOME"]}/gems/vagrant-0.8.10/keys/vagrant"
+
+  def with_ssh
   Net::SSH.start("localhost", "vagrant", {
       :port => 2222, :keys => [SSH_KEY]
   }) do |ssh|
     yield ssh
   end
-end
-# END:with_ssh
+  end
+  # END:with_ssh
 
-# START:scp_upload
-def scp_upload(local_file, remote_file)
+  # START:scp_upload
+  def scp_upload(local_file, remote_file)
   Net::SCP.upload!("localhost", "vagrant", local_file, remote_file, {
       :ssh => {:port => 2222, :keys => [SSH_KEY]}
   }) do |ch, name, sent, total|
     print "\rCopying #{name}: #{sent}/#{total}"
   end; print "\n"
-end
-# END:scp_upload
+  end
+  # END:scp_upload
 
-# START:warbler_task
-Warbler::Task.new(:warble)
-# END:warbler_task
+  # START:warbler_task
+  Warbler::Task.new(:warble)
+  # END:warbler_task
 
-#START:deploy
-namespace :deploy do
+  #START:deploy
+  namespace :deploy do
   desc "Package the application into a WAR file and deploy it"
   task :war => [:warble] do
     # todo
@@ -69,5 +71,6 @@ namespace :deploy do
     # END:deploy_tomcat
     # START:deploy
   end
+  end
+  # END:deploy
 end
-# END:deploy

@@ -1,6 +1,6 @@
 # START:group_puppet
 group { "puppet":
-    ensure => "present",
+  ensure => "present"
 }
 # END:group_puppet
 

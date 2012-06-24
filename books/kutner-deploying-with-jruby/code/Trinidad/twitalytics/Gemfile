@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'json'
 gem 'twitter', '2.0.2'
 
-# START:therubyrhino  
+# START:therubyrhino
 platform :jruby do
   gem 'therubyrhino'
   # END:therubyrhino
@@ -24,7 +24,7 @@ platform :jruby do
   # START:jruby_openssl
   gem 'jruby-openssl'
   # END:jruby_openssl
-  # START:therubyrhino  
+  # START:therubyrhino
 end
 # END:therubyrhino
 

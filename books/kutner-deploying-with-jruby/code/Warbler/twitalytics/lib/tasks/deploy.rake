@@ -29,9 +29,11 @@ end
 namespace :deploy do
   desc "Package the application into a WAR file and deploy it"
   task :war do
+    # START:deploy
     Warbler::Task.new(:warble)
     Rake::Task['warble'].invoke
     # END:deploy
+
     # START:prepare
     with_ssh do |ssh|
       ssh.exec! "mkdir -p deploy/"
@@ -63,7 +65,6 @@ namespace :deploy do
       puts 'Deployment complete!'
     end
     # END:deploy_tomcat
-    # START:deploy
   end
 end
 # END:deploy
