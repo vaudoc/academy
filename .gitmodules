@@ -7,3 +7,6 @@
 [submodule "books/katz-rails3-in-action"]
 	path = books/katz-rails3-in-action
 	url = https://github.com/rails3book/ticketee.git
+[submodule "books/nutter-using-jruby"]
+	path = books/nutter-using-jruby
+	url = git://github.com/jruby/using_jruby.git
