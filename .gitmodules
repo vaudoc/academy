@@ -10,3 +10,6 @@
 [submodule "books/nutter-using-jruby"]
 	path = books/nutter-using-jruby
 	url = git://github.com/jruby/using_jruby.git
+[submodule "books/meyer-riak-handbook"]
+	path = books/meyer-riak-handbook
+	url = git://github.com/mattmatt/nosql-handbook-examples.git
