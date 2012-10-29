@@ -16,3 +16,6 @@
 [submodule "presentations/lagomeetup-talks"]
 	path = presentations/lagomeetup-talks
 	url = git://github.com/lagomeetup/talks.git
+[submodule "books/dix-service-oriented-design"]
+	path = books/dix-service-oriented-design
+	url = git://github.com/pauldix/service-oriented-design-with-ruby.git
