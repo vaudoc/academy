@@ -13,3 +13,6 @@
 [submodule "books/meyer-riak-handbook"]
 	path = books/meyer-riak-handbook
 	url = git://github.com/mattmatt/nosql-handbook-examples.git
+[submodule "presentations/lagomeetup-talks"]
+	path = presentations/lagomeetup-talks
+	url = git://github.com/lagomeetup/talks.git
