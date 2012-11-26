@@ -19,3 +19,6 @@
 [submodule "books/dix-service-oriented-design"]
 	path = books/dix-service-oriented-design
 	url = git://github.com/pauldix/service-oriented-design-with-ruby.git
+[submodule "books/losh-learn-vimscript-the-hard-way"]
+	path = books/losh-learn-vimscript-the-hard-way
+	url = git://github.com/sjl/learnvimscriptthehardway.git
