@@ -22,3 +22,9 @@
 [submodule "books/losh-learn-vimscript-the-hard-way"]
 	path = books/losh-learn-vimscript-the-hard-way
 	url = git://github.com/sjl/learnvimscriptthehardway.git
+[submodule "books/metz-poodr-golang"]
+	path = books/metz-poodr-golang
+	url = git://github.com/nathany/go-poodr.git
+[submodule "books/metz-poodr"]
+	path = books/metz-poodr
+	url = https://github.com/skmetz/poodr
