@@ -28,3 +28,6 @@
 [submodule "books/metz-poodr"]
 	path = books/metz-poodr
 	url = https://github.com/skmetz/poodr
+[submodule "books/astaxie-build-web-application-with-golang"]
+	path = books/astaxie-build-web-application-with-golang
+	url = git://github.com/astaxie/build-web-application-with-golang.git
