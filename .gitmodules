@@ -31,3 +31,6 @@
 [submodule "books/astaxie-build-web-application-with-golang"]
 	path = books/astaxie-build-web-application-with-golang
 	url = git://github.com/astaxie/build-web-application-with-golang.git
+[submodule "books/kisom-gocrypto"]
+	path = books/kisom-gocrypto
+	url = git://github.com/kisom/gocrypto.git
